@@ -1,0 +1,149 @@
+@keyframes identifier {
+    0% {
+
+    }
+
+    100% {
+
+    }
+}
+
+:root {
+    --colortext :#eee ;
+    --colorBackground: #333 ;
+    --colorMenu : #0892b8 ;
+    --colorTranstion : #ffffff55;
+    --colorcont: #9c9a9a;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: var(--colortext);
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+body {
+    background: var(--colorBackground) ;
+    display: flex;
+}
+
+menu {
+    width: 50px;
+    padding: 20px;
+    overflow: hidden;
+    height: calc(100vh );
+    background: var(--colorMenu);
+    transition: all 0.5s ease;
+}
+
+menu:hover {
+    width: 300px;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+figure img {
+    width: 40px;
+    border: 3px solid white;
+    border-radius: 50%;
+
+}
+ul li a {
+    display: flex;
+    text-decoration: none;
+    gap: 40px;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 10px;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+a:hover ,
+.activ ,
+main section .box:hover {
+    background: var(--colorTranstion);
+}
+
+ul {
+    list-style: none;
+    height: 95%;
+    position: relative;
+}
+
+.log-out {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+i {
+    font-size: 30px;
+    
+}
+
+.log-out a {
+    background: red;
+}
+
+main {
+    width: 100%;
+    margin: 10px;
+}
+main section:first-of-type ,
+main section:nth-child(3) {
+    background-color: var(--colorMenu);
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+main section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+main section .box {
+    flex-basis: 150px;
+    flex-grow: 1;
+    background: var(--colorMenu);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 8px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+main section .box .data ,
+main section .box i   {
+    text-align: center;
+}
+
+main section .box span {
+    font-size: 40px;
+}
+
+table {
+    width: 100%;
+    border-spacing: 10px;
+}
+table th , table td  {
+    border: 3px solid ;
+    text-align: center;
+    height: 40px;
+    border-radius: 7px;
+}
